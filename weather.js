@@ -10,7 +10,7 @@ btn.addEventListener('click', () => {
 		var name = document.querySelector('#name');
 		name.textContent = data.features[0].place_name;
 		console.log(long, lat);
-		fetch('http://api.weatherstack.com/current?access_key=b14f3b4560befc881867064b969faa61&query='+lat+','+long+'&unit=m').then((res) => {
+		fetch('http://api.weatherstack.com/current?access_key=8344ce2e5e07a7caca0f134d704e7ef5&query='+lat+','+long+'&unit=m').then((res) => {
 		return res.json();
 	}).then((data) => {
 		console.log(data.current.temperature);
